@@ -3,7 +3,7 @@
 # 🚀 Emergent — Your Launchpad for Ambitious Apps
 
 Welcome to **Emergent**, an internal platform designed to bridge **project execution** and **technical growth**.  
-Think of it as the **central nervous system** for your teams — combining **SAP dashboards**, **GitHub integration**, and a **learning portal** to create real competitive advantage for TCS associates and projects.
+Think of it as the **central nervous system** for your teams — combining **SAP dashboards**, **GitHub integration**, and a **learning portal** to create real competitive advantage for mnc like TCS associates and projects.
 
 ---
 
