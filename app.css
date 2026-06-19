@@ -1,0 +1,54 @@
+
+Action: file_editor create /app/frontend/src/App.css --file-text "/* TCS SAP Hub - module-specific styles */
+.App {
+    min-height: 100vh;
+}
+
+.code-editor {
+    background: #0b1020;
+    color: #e6edf3;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 13px;
+    line-height: 1.6;
+    padding: 16px;
+    border-radius: 2px;
+    border: 1px solid #1f2937;
+    min-height: 360px;
+    width: 100%;
+    resize: vertical;
+    tab-size: 4;
+}
+
+.code-editor:focus {
+    outline: none;
+    border-color: #002fa7;
+    box-shadow: 0 0 0 2px rgba(0, 47, 167, 0.25);
+}
+
+.kanban-col-todo { border-top: 3px solid #6b7280; }
+.kanban-col-in_progress { border-top: 3px solid #002fa7; }
+.kanban-col-review { border-top: 3px solid #f59e0b; }
+.kanban-col-done { border-top: 3px solid #10b981; }
+
+.priority-low { background: #f1f5f9; color: #475569; }
+.priority-medium { background: #fef3c7; color: #92400e; }
+.priority-high { background: #fee2e2; color: #991b1b; }
+.priority-critical { background: #002fa7; color: white; }
+
+.stagger-fade > * {
+    opacity: 0;
+    animation: fadeUp 0.45s ease-out forwards;
+}
+.stagger-fade > *:nth-child(1) { animation-delay: 0.02s; }
+.stagger-fade > *:nth-child(2) { animation-delay: 0.08s; }
+.stagger-fade > *:nth-child(3) { animation-delay: 0.14s; }
+.stagger-fade > *:nth-child(4) { animation-delay: 0.20s; }
+.stagger-fade > *:nth-child(5) { animation-delay: 0.26s; }
+.stagger-fade > *:nth-child(6) { animation-delay: 0.32s; }
+
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+"
+Observation: Overwrite successful: /app/frontend/src/App.css
