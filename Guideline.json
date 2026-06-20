@@ -1,0 +1,123 @@
+
+Action: file_editor create /app/design_guidelines.json --file-text "{
+  \"theme\": \"light\",
+  \"archetype\": \"4 (Swiss & High-Contrast)\",
+  \"design_philosophy\": \"Objective, rigid, and functional-first. 95% monochrome with color used purely as a functional signal. Inspired by command-center density and Swiss brutalism, providing extreme clarity for complex SAP project management and code execution.\",
+  \"colors\": {
+    \"background\": {
+      \"primary\": \"#FFFFFF\",
+      \"secondary\": \"#F8F9FA\",
+      \"tertiary\": \"#F1F3F5\"
+    },
+    \"text\": {
+      \"primary\": \"#111827\",
+      \"secondary\": \"#4B5563\",
+      \"inverse\": \"#FFFFFF\",
+      \"mono\": \"#374151\"
+    },
+    \"brand\": {
+      \"primary\": \"#002FA7\",
+      \"primary_hover\": \"#00227B\",
+      \"accent_red\": \"#E11D48\",
+      \"accent_yellow\": \"#F59E0B\",
+      \"accent_green\": \"#10B981\"
+    },
+    \"border\": {
+      \"default\": \"#E5E7EB\",
+      \"focus\": \"#002FA7\",
+      \"technical\": \"#D1D5DB\"
+    }
+  },
+  \"typography\": {
+    \"fonts\": {
+      \"heading\": \"Outfit, sans-serif\",
+      \"body\": \"IBM Plex Sans, sans-serif\",
+      \"mono\": \"IBM Plex Mono, monospace\"
+    },
+    \"rules\": {
+      \"h1\": \"text-4xl sm:text-5xl font-bold tracking-tight text-gray-900\",
+      \"h2\": \"text-2xl sm:text-3xl font-semibold tracking-tight text-gray-900\",
+      \"h3\": \"text-xl sm:text-2xl font-medium tracking-tight text-gray-800\",
+      \"body\": \"text-base leading-relaxed text-gray-600\",
+      \"labels\": \"text-xs font-bold uppercase tracking-[0.2em] text-gray-500\",
+      \"code\": \"text-sm font-mono text-gray-800 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-200\"
+    }
+  },
+  \"spacing_and_layout\": {
+    \"grid_strategy\": \"The 'Control Room' Grid - grid-cols-1 md:grid-cols-3 lg:grid-cols-4 for dense data alignment. Tight gaps (gap-4 or gap-6). Override stretch behavior with align-items: start where necessary.\",
+    \"surface_strategy\": \"Grid Borders ('Technical' look). Containers with flat backgrounds and 1px borders. Sharp edges or max 4px radius (rounded-sm). Minimize soft shadows.\",
+    \"padding\": \"Generous internal padding (p-6 or p-8) for main containers to ensure text does not collide with structural borders.\",
+    \"alignment\": \"Strict left-alignment for data and forms. Center alignment only for empty states or specific modal headers.\"
+  },
+  \"components\": {
+    \"buttons\": {
+      \"primary\": \"bg-[#002FA7] text-white hover:bg-[#00227B] rounded-sm px-6 py-2 transition-colors font-medium border border-transparent\",
+      \"secondary\": \"bg-white text-gray-900 border border-gray-300 hover:bg-gray-50 hover:text-gray-900 rounded-sm px-6 py-2 transition-colors font-medium\",
+      \"ghost\": \"bg-transparent text-gray-600 hover:bg-gray-100 hover:text-gray-900 rounded-sm px-4 py-2 transition-colors font-medium\"
+    },
+    \"cards\": {
+      \"default\": \"bg-white border border-[#E5E7EB] rounded-sm flex flex-col\",
+      \"interactive\": \"bg-white border border-[#E5E7EB] rounded-sm hover:-translate-y-1 hover:border-gray-300 transition-all duration-200 cursor-pointer\"
+    },
+    \"forms\": {
+      \"inputs\": \"bg-white border border-gray-300 rounded-sm px-3 py-2 text-sm text-gray-900 focus:outline-none focus:ring-2 focus:ring-[#002FA7]/20 focus:border-[#002FA7] transition-all\",
+      \"labels\": \"block text-sm font-medium text-gray-700 mb-1.5\"
+    },
+    \"kanban\": {
+      \"column\": \"bg-[#F8F9FA] rounded-sm p-4 border border-gray-200 flex flex-col gap-3 min-h-[600px]\",
+      \"task_card\": \"bg-white p-4 rounded-sm border border-gray-200 shadow-sm hover:border-gray-300 cursor-grab active:cursor-grabbing\"
+    },
+    \"navigation\": {
+      \"sidebar\": \"w-64 bg-[#F8F9FA] border-r border-gray-200 flex flex-col h-screen fixed left-0 top-0 z-40\",
+      \"topbar\": \"h-16 bg-white border-b border-gray-200 flex items-center justify-between px-6 sticky top-0 z-30 lg:ml-64\"
+    }
+  },
+  \"media\": {
+    \"images\": [
+      {
+        \"category\": \"auth_background\",
+        \"url\": \"https://images.unsplash.com/photo-1644088379091-d574269d422f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzl8MHwxfHNlYXJjaHwxfHx0ZWNobm9sb2d5JTIwbmV0d29yayUyMGFic3RyYWN0fGVufDB8fHx8MTc4MTg0MzA1OHww&ixlib=rb-4.1.0&q=85\",
+        \"description\": \"Abstract technology network background\",
+        \"usage\": \"Use as a split-screen background on the login/register pages. Apply a light white overlay if text is placed directly over it.\"
+      },
+      {
+        \"category\": \"user_avatar_placeholder\",
+        \"url\": \"https://images.unsplash.com/photo-1556761175-4b46a572b786?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA0MTJ8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBvZmZpY2UlMjB3b3Jrc3BhY2V8ZW58MHx8fHwxNzgxODQzMDUyfDA&ixlib=rb-4.1.0&q=85\",
+        \"description\": \"Professional avatar\",
+        \"usage\": \"Use as a fallback/placeholder for user profile images, task assignees, and team member comments.\"
+      },
+      {
+        \"category\": \"learning_portal_hero\",
+        \"url\": \"https://images.unsplash.com/photo-1607799279861-4dd421887fb3?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzR8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBzb2Z0d2FyZSUyMGRldmVsb3BlcnxlbnwwfHx8fDE3ODE4NDMwNTF8MA&ixlib=rb-4.1.0&q=85\",
+        \"description\": \"Laptop displaying colorful code\",
+        \"usage\": \"Use as a hero image or banner in the Learning Portal to evoke a technical atmosphere. Keep overlay dark or white with 50% opacity to maintain text legibility.\"
+      }
+    ],
+    \"icons\": {
+      \"library\": \"lucide-react\",
+      \"guidelines\": \"Use solid, reliable icons. Pair with text for clarity rather than relying purely on icon meaning.\"
+    }
+  },
+  \"motion_and_interactions\": {
+    \"hover_states\": \"All interactive elements MUST explicitly set text color on hover. Use subtle background darkening (e.g. hover:bg-gray-50) for interactive rows.\",
+    \"transitions\": \"Use transition-all duration-200 ease-in-out for standard UI elements.\",
+    \"loading\": \"Prioritize skeleton screens matching the grid layout over generic spinners.\"
+  },
+  \"accessibility\": {
+    \"contrast\": \"Maintain 4.5:1 ratio for normal text. Rely on the stark monochrome base to automatically handle most contrast needs.\",
+    \"focus\": \"All interactive elements must use focus:outline-none focus:ring-2 focus:ring-[#002FA7]/50 focus:ring-offset-1 focus:ring-offset-white.\",
+    \"testing_attributes\": \"All interactive elements (buttons, inputs, tab triggers, kanban cards) MUST have a data-testid attribute formatted as kebab-case-role (e.g., data-testid='create-task-button').\"
+  },
+  \"instructions_to_main_agent\": [
+    \"Strictly follow the Archetype 4 Light Theme color palette. Avoid arbitrary colors; use #002FA7 exclusively for primary actions and active states.\",
+    \"Use pure HTML and Tailwind for structural layout (grid, flex) and heavily customize Shadcn components (strip out heavy radii and soft shadows, replacing with rounded-sm and 1px borders).\",
+    \"Construct the app layout with a fixed left sidebar (w-64) and a sticky top header (h-16).\",
+    \"The Project Dashboard must use the 'Control Room' grid (dense, cardless or flat 1px-bordered). Incorporate Shadcn charts or Recharts for progress metrics.\",
+    \"The Tasks Kanban should be functional. Use columns with a distinct background (#F8F9FA) and crisp white cards inside.\",
+    \"The Learning Portal code editor should emulate a technical IDE interface. You can use a dark theme specifically inside the code editor bounding box for realism, but the rest of the portal should remain light theme.\",
+    \"The GitHub integration panel should present commits and PRs in a dense, scan-first list with monospace hashes.\",
+    \"Never use generic default sans-serif for headings; ensure Outfit is configured in Tailwind and imported.\",
+    \"Ensure every form and button includes data-testid.\"
+  ]
+}"
+Observation: Create successful: /app/design_guidelines.json
