@@ -1,0 +1,116 @@
+Now the frontend files. Let me write them all in parallel.
+Action: file_editor create /app/frontend/src/index.css --file-text "@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
+
+:root {
+    --bg-primary: #ffffff;
+    --bg-secondary: #f8f9fa;
+    --bg-tertiary: #f1f3f5;
+    --text-primary: #111827;
+    --text-secondary: #4b5563;
+    --brand: #002fa7;
+    --brand-hover: #00227b;
+    --border: #e5e7eb;
+}
+
+body {
+    margin: 0;
+    font-family: 'IBM Plex Sans', system-ui, -apple-system, sans-serif;
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6, .font-heading {
+    font-family: 'Outfit', 'IBM Plex Sans', sans-serif;
+    letter-spacing: -0.01em;
+}
+
+.font-mono, code, pre, .ibm-mono {
+    font-family: 'IBM Plex Mono', ui-monospace, SFMono-Regular, monospace;
+}
+
+::selection {
+    background: #002fa7;
+    color: #ffffff;
+}
+
+@layer base {
+    :root {
+        --background: 0 0% 100%;
+        --foreground: 222 47% 11%;
+        --card: 0 0% 100%;
+        --card-foreground: 222 47% 11%;
+        --popover: 0 0% 100%;
+        --popover-foreground: 222 47% 11%;
+        --primary: 224 100% 33%;
+        --primary-foreground: 0 0% 100%;
+        --secondary: 220 14% 96%;
+        --secondary-foreground: 222 47% 11%;
+        --muted: 220 14% 96%;
+        --muted-foreground: 220 9% 46%;
+        --accent: 220 14% 96%;
+        --accent-foreground: 222 47% 11%;
+        --destructive: 347 77% 50%;
+        --destructive-foreground: 0 0% 100%;
+        --border: 220 13% 91%;
+        --input: 220 13% 91%;
+        --ring: 224 100% 33%;
+        --radius: 0.125rem;
+        --chart-1: 224 100% 33%;
+        --chart-2: 158 64% 40%;
+        --chart-3: 38 92% 50%;
+        --chart-4: 347 77% 50%;
+        --chart-5: 215 16% 47%;
+    }
+}
+
+@layer base {
+    * { @apply border-border; }
+    body { @apply bg-background text-foreground; }
+}
+
+/* Custom utility classes */
+.surface-card {
+    background: #ffffff;
+    border: 1px solid var(--border);
+    border-radius: 2px;
+}
+
+.label-eyebrow {
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: #6b7280;
+}
+
+.shimmer {
+    background: linear-gradient(90deg, #f1f3f5 25%, #e9ecef 50%, #f1f3f5 75%);
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+}
+
+.grid-bg {
+    background-image:
+        linear-gradient(rgba(17, 24, 39, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(17, 24, 39, 0.03) 1px, transparent 1px);
+    background-size: 32px 32px;
+}
+
+/* Sidebar nav item active */
+.nav-item-active {
+    background: #002fa7;
+    color: #ffffff !important;
+}
+"
+Observation: Overwrite successful: /app/frontend/src/index.css
