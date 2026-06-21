@@ -38,14 +38,6 @@ No more prototypes sitting idle — this is about building solutions that delive
 └── docs/             # Documentation & guides
 
 
----
-
-## 📌 Ownership
-You retain **full ownership** of your idea, content, and any IP in the application you build.  
-Emergent is here to help you **build, launch, and manage** it.
-
----
-
 ## 🤝 Let’s Build
 This is substantial. We’re setting up the **core structure** now and will iterate together.  
 Emergent is not just a tool — it’s a platform for **scaling innovation across teams**.
